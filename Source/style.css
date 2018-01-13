@@ -1,0 +1,57 @@
+body {
+	font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  background: white;
+  color: #ab121c;
+  padding:0;
+  margin:0;
+  text-align: center;
+	min-height: 100vh;
+}
+::-webkit-scrollbar { /*Removes scrollbar*/
+    display: none;
+}
+
+a {
+  color: inherit;
+}
+.Logo {
+  float:right;
+  width: 80px;
+  height: 80px;
+  padding-top: 80px;
+  padding-right: 80px;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+.Logo:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+.divider{
+	min-height:100vh;
+}
+.offers {
+	background-color:#ab121c;
+	padding:20px;
+	width:100%;
+}
+.offers div {
+	background-color:white;
+	padding:20px;
+	width:20%;
+	display: inline-block;
+}
+.about {
+	padding:20px;
+	background-color:#ab121c;
+	width:100%;
+	margin-top:20px;
+}
+.contact {
+	padding:20px;
+	background-color:#ab121c;
+	width:100%;
+	margin-top:20px;
+}
