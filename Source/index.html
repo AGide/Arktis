@@ -1,61 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Rockette branding</title>
-  <link href="Images/Logo_negative.png" rel="Shortcut icon">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="menu.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <title>Arktis Programförening</title>
+  <link href="Images/arktis_favicon.png" rel="Shortcut icon">
+  <link href="style.css" rel="stylesheet" type="text/css">
 
   <script type="text/javascript" src="jquery-3.2.1.slim.js"></script>
   <script type="text/javascript" src="scroll.js"></script>
 </head>
 
 <body>
-  <img class="Logo" src="Images/Logo_normal.png">
-  <nav class="menu">
-    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-    <label class="menu-open-button" for="menu-open">
-      <span class="hamburger hamburger-1"></span>
-      <span class="hamburger hamburger-2"></span>
-      <span class="hamburger hamburger-3"></span>
-    </label>
 
-    <a href="#" class="menu-item"><i class="fa fa-folder-open-o"></i> </a>
-    <a href="#offers" class="menu-item"><i class="fa fa-shopping-cart"></i> </a>
-    <a href="#" class="menu-item"><i class="fa fa-archive"></i> </a>
-    <a href="#" class="menu-item"><i class="fa fa-envelope"></i> </a>
-  </nav>
-
-    <div class="divider">
-    </div>
-
-  <div class="offers" id="offers">
-    <div>
-      <h1>Starterpaket</h1>
-      <p>3 utkast <br> 2 revisioner <br> filer för tryck</p>
-    </div>
-    <div>
-      <h1>Starterpaket</h1>
-      <p>3 utkast <br> 2 revisioner <br> filer för tryck</p>
-    </div>
-    <div>
-      <h1>Starterpaket</h1>
-      <p>3 utkast <br> 2 revisioner <br> filer för tryck</p>
-    </div>
-    <div>
-      <h1>Starterpaket</h1>
-      <p>3 utkast <br> 2 revisioner <br> filer för tryck</p>
-    </div>
+  <!-- Nav -->
+  <div id="nav">
+    <ul>
+      <li id="name"><a><strong>Arktis </strong><span class="collapse">Programförening</span></a></li>
+      <li><a href="#section4">För företag</a></li>
+      <li><a href="#section3"><span class="collapse">Styrelsen</span><span class="reveal">Styret</span></a></li>
+      <li><a href="#section2">Engagera dig</a></li>
+      <li><a href="#section1">Om oss</a></li>
+    </ul>
   </div>
+  <img id="logotype" src="Images/arktis_favicon.png" alt="Arktis">
 
-  <div class="about">
+  <!-- Parallax -->
+  <div class="parallax-container">
+    <div class="parallax-layer layer-0" data-parallax-speed="0.10" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-1" data-parallax-speed="0.20" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-2" data-parallax-speed="0.45" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-3" data-parallax-speed="0.75" data-max-scroll="565"></div>
+    <div class="parallax-layer layer-4" data-parallax-speed="1.00" data-max-scroll="565"></div>
   </div>
+  <!-- Blockerar parallaxproblem -->
+  <script src="parallax.js"></script>
+  <div id="blocker"></div>
 
-  <div class="contact">
+  <!-- Sidans innehåll -->
+  <div id="border">
+    <div id="spons">
+      <p><strong>I samarbete med</strong></p>
+      <!-- Samarbetspartners -->
+      <a href=""><img src="Images/SponsExempel.png"></a>
+    </div>
+
+  <div class="holder">
+      <div class="titel">
+        <p id="section1"><strong>Om oss</strong></p>
+      </div>
+      <span><p>Arktis Programförening är en ideell studentförening under Geosektionen vid Luleå tekniska universitet som ansvarar för utbildningsbevakningen för utbildningarna Samhällsbyggnad och Civilingenjör arkitektur. Föreningen arbetar ständigt för att öka gemenskapen mellan utbildningarna, detta görs genom aktiviteter såsom sittningar, fester, resor och föreläsningar för våra. <br><br>
+                Föreningens absolut viktigaste uppgift är utbildningsbevakning. Föreningen jobbar aktivt för att samla alla klasser i utbildningarna under ett tak för att således, gemensamt, kunna trycka på förändring. Du som student kan alltså gå via din programförening, Arktis, för att ta upp problem du har med din utbildning. Vi som förening kommer därefter föra er talan inför universitetet. Målet är att underlätta för dig och se till att din studietid blir så bra som möjligt. </p></span>
+      <div class="titel">
+        <p id="section2"><strong>Engagera dig</strong></p>
+      </div>
+      <span><p>Arktis Programförening arbetar inom många områden och har alltid plats för tillskott.<br><br>Arktis består av en styrelse där alla ledamot, bortsett från ordförande och viceordförande, även sköter varsit utskott. Styrelsen består av orförande, viceordförande, utbildningsbevakare, kassör, arbetsmarknadsansvarig, eventansvarig och info/pr-ansvarig. Hur det är att sitta på en av dessa poster kan du läsa om HÄR, även om du inte vill ta något ansvar kan du engagera dig i något utav våra utskott. <br><br>Är du intresserad av att engagera dig i förening så är du som medlem alltid välkommen till våra stämmor, veckomöten hålls på tisdagar kl.11-12. </p></span>
+      <div class="titel">
+        <p id="section3"><strong>Styrelsen</strong></p>
+      </div>
+      <div id="kkk" style="max-width:1200px; margin:auto;">
+          <div class="member"><div class="redborder"><div class="greenborder"><a href=""><img src="Images/icon_in.png"></a></div></div><a href="">Namn Namnsson</a><p class="styrelsepost">Post</p></div>
+          <div class="member"><div class="redborder"><div class="greenborder"><a href=""><img src="Images/icon_in.png"></a></div></div><a href="">Namn Namnsson</a><p class="styrelsepost">Post</p></div>
+          <div class="member"><div class="redborder"><div class="greenborder"><a href=""><img src="Images/icon_in.png"></a></div></div><a href="">Namn Namnsson</a><p class="styrelsepost">Post</p></div>
+      </div>
+
+      <div class="titel">
+        <p id="section4"><strong>För företag</strong></p>
+      </div>
+    <footer>
+      <p><strong>Arktis</strong> Programförening</p>
+      <p class="bajs">Vid Luleå tekniska universitet</p>
+      <a href="https://www.facebook.com/arktisltu"><img src="Images/icon_fb.png"></a>
+      <a href="https://www.linkedin.com/company/18390407/"><img src="Images/icon_in.png"></a>
+      <a href="https://www.instagram.com/Arktis.LTU/"><img src="Images/icon_ig.png"></a>
+    </footer>
+
   </div>
+</div>
 </body>
 
 </html>
