@@ -1,3 +1,9 @@
+//Loader
+window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	document.body.removeChild(load_screen);
+});
+
 // Autoscroll
 $(document).ready(function(){
 			$('a[href^="#"]').on('click',function (e) {
