@@ -2,124 +2,138 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
   <title>Arktis Programförening</title>
-  <link href="Images/arktis_favicon.png" rel="Shortcut icon">
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="jquery-3.2.1.slim.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='Images/arktis_favicon.png' rel='Shortcut icon'>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+  <script type='text/javascript' src='jquery-3.2.1.slim.js'></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
 
 <body>
-  <div id="load_screen"><div>
-    <img src="Images/arktis_favicon.png" class="loader">
+  <!-- Loadscreen -->
+  <div id='load_screen'>
+    <img src='Images/arktis_favicon.png' class='load_screen_loader'>
   </div>
-  </div>
-  <!-- Nav -->
-  <div id="nav">
+
+  <!-- Navigation -->
+  <div id='navigation_wrapper'>
     <ul>
-      <li id="name"><a><strong>Arktis </strong><span class="collapse">Programförening</span></a></li>
-      <li><a href="#section4">Samarbete</a></li>
-      <li><a href="#section3"><span class="collapse">Styrelsen</span><span class="reveal">Styret</span></a></li>
-      <li><a href="#section2">Engagera dig</a></li>
-      <li><a href="#section1">Om oss</a></li>
+      <!-- Change content of <a> when needed -->
+      <li id='navigation_wrapper_name'><a><strong>Arktis </strong><span class='element_no_show'>Programförening</span></a></li>
+      <li><a href='#section4'>Samarbete</a></li>
+      <li><a href='#section3'><span class='element_no_show'>Styrelsen</span><span class='element_do_show'>Styret</span></a></li>
+      <li><a href='#section2'>Engagera dig</a></li>
+      <li><a href='#section1'>Om oss</a></li>
     </ul>
   </div>
-  <!-- Parallax -->
-  <div class="parallax-container">
-    <div class="parallax-layer layer-0" data-parallax-speed="0.10" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-1" data-parallax-speed="0.20" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-2" data-parallax-speed="0.45" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-3" data-parallax-speed="0.75" data-max-scroll="565"></div>
-    <div class="parallax-layer layer-4" data-parallax-speed="1.00" data-max-scroll="565"></div>
 
-    <script type="text/javascript" src="Script.js"></script>
+  <!-- Parallax -->
+  <div class='parallax-container'>
+    <!-- DO NOT TOUCH -->
+    <div class='parallax-layer layer-0' data-parallax-speed='0.10' data-max-scroll='565'></div>
+    <div class='parallax-layer layer-1' data-parallax-speed='0.20' data-max-scroll='565'></div>
+    <div class='parallax-layer layer-2' data-parallax-speed='0.45' data-max-scroll='565'></div>
+    <div class='parallax-layer layer-3' data-parallax-speed='0.75' data-max-scroll='565'></div>
+    <div class='parallax-layer layer-4' data-parallax-speed='1.00' data-max-scroll='565'></div>
+
+    <script type='text/javascript' src='Script.js'></script>
   </div>
-  <!-- Blockerar parallaxproblem -->
-  <div id="blocker"></div>
-  <!-- Sidans innehåll -->
-  <div id="border">
-    <div id="spons">
+  <!-- Blocks parallax scroll issue -->
+  <div id='blocker'></div>
+
+  <!-- Page content -->
+  <div id='border_content'>
+
+    <!-- Sponsorships -->
+    <div id='content_spons'>
       <p><strong>I samarbete med</strong></p>
       <!-- Samarbetspartners -->
-      <a href=""><img src="Images/SponsExempel.png"></a>
-      <p class="Outside">Vill ditt företag synas här?<br><a class="undetailed" href="">Gå vidare</a>.</p>
+      <a href=''><img src='Images/spons_exempel.png'></a>
+      <p class='content_spons_detail'>Vill ditt företag synas här?<br><a class='element_no_detail' href=''>Gå vidare</a>.</p>
     </div>
-    <div class="holder">
-      <div class="titel">
-        <p id="section1"><strong>Om oss</strong></p>
+    <!-- Wrapper for page content -->
+    <div class='wrapper_content'>
+
+      <!-- About -->
+      <div class='wrapper_content_title'>
+        <p id='section1'><strong>Om oss</strong></p>
       </div>
       <span><p>Arktis Programförening är en ideell studentförening under Geosektionen vid Luleå tekniska universitet som ansvarar för utbildningsbevakningen för utbildningarna Samhällsbyggnad och Civilingenjör arkitektur. Föreningen arbetar ständigt för att öka gemenskapen mellan utbildningarna, detta görs genom aktiviteter såsom sittningar, fester, resor och föreläsningar för våra. <br><br>
                 Föreningens absolut viktigaste uppgift är utbildningsbevakning. Föreningen jobbar aktivt för att samla alla klasser i utbildningarna under ett tak för att således, gemensamt, kunna trycka på förändring. Du som student kan alltså gå via din programförening, Arktis, för att ta upp problem du har med din utbildning. Vi som förening kommer därefter föra er talan inför universitetet. Målet är att underlätta för dig och se till att din studietid blir så bra som möjligt. </p></span>
-      <div class="titel">
-        <p id="section2"><strong>Engagera dig</strong></p>
+
+      <!-- Join -->
+      <div class='wrapper_content_title'>
+        <p id='section2'><strong>Engagera dig</strong></p>
       </div>
-      <div class="gif"><img src="Images/Engagemang.gif"></div>
-      <span><p>Arktis Programförening arbetar inom många områden och har alltid plats för tillskott.<br><br>Arktis består av en styrelse där alla ledamot, bortsett från ordförande och viceordförande, även ansvarar över varsit utskott. Styrelsen består av orförande, viceordförande, utbildningsbevakare, kassör, arbetsmarknadsansvarig, eventansvarig och info/pr-ansvarig. Hur det är att sitta på en av dessa poster kan du läsa om <a class="undetailed" href="">HÄR</a>, även om du inte vill ta något ansvar kan du engagera dig i något utav våra utskott. <br><br>Är du intresserad av att engagera dig i förening så är du som medlem alltid välkommen till våra stämmor, veckomöten hålls på tisdagar kl.11-12. </p></span>
+      <div class='wrapper_content_gif'><img src='Images/Engagemang.gif'></div>
+      <span><p>Arktis Programförening arbetar inom många områden och har alltid plats för tillskott.<br><br>Arktis består av en styrelse där alla ledamot, bortsett från ordförande och viceordförande, även ansvarar över varsit utskott. Styrelsen består av orförande, viceordförande, utbildningsbevakare, kassör, arbetsmarknadsansvarig, eventansvarig och info/pr-ansvarig. Hur det är att sitta på en av dessa poster kan du läsa om <a class='element_no_detail' href=''>HÄR</a>, även om du inte vill ta något ansvar kan du engagera dig i något utav våra utskott. <br><br>Är du intresserad av att engagera dig i förening så är du som medlem alltid välkommen till våra stämmor, veckomöten hålls på tisdagar kl.11-12. </p></span>
 
       <!-- STYRELSEN -->
-      <div class="titel">
-        <p id="section3"><strong>Styrelsen</strong></p>
+      <div class='wrapper_content_title'>
+        <p id='section3'><strong>Styrelsen</strong></p>
       </div>
 
-      <div class="flex-column">
-        <div class="flex-row">
+      <div class='flex-column'>
+        <div class='flex-row'>
           <div>
-            <img src="Images/Member.png" />
+            <img src='Images/member_male1.png' />
             <p>
               Andreas Brandow <br /> Ordförande
             </p>
           </div>
           <div>
-            <img src="Images/Member.png" />
+            <img src='Images/member_male2.png' />
             <p>
               Albin Gideonsson <br /> Vice ordförande
             </p>
           </div>
         </div>
 
-        <div class="flex-row">
+        <div class='flex-row'>
           <div>
-            <img src="Images/Member.png" />
+            <img src='Images/member_woman1.png' />
             <p>
               Johanna Wärvik <br /> Utbildning
             </p>
           </div>
           <div>
-            <img src="Images/Member.png" />
+            <img src='Images/member_woman2.png' />
             <p>
               Sandra Zetterqvist <br /> Arbetsmarknad
             </p>
           </div>
           <div>
-            <img src="Images/Member.png" />
+            <img src='Images/member_male2.png' />
             <p>
               Vakant <br /> Kassör
             </p>
           </div>
         </div>
 
-        <div class="flex-row">
+        <div class='flex-row'>
           <div>
-            <img src="Images/Member.png" />
+            <img src='Images/member_male2.png' />
             <p>
               Jaber Mikari <br /> Event
             </p>
           </div>
           <div>
-            <img src="Images/Member.png" />
+            <img src='Images/member_male1.png' />
             <p>
               Victor Vennerström <br /> PR/Info
             </p>
           </div>
         </div>
       </div>
+
+      <!--  -->
       <footer>
         <p><strong>Arktis</strong> Programförening</p>
-        <p class="bajs">En del av Geosektionen vid Luleå tekniska universitet</p>
-        <a href="https://www.linkedin.com/company/18390407/"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/Arktis.LTU/"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.facebook.com/arktisltu"><i class="fa fa-facebook-f"></i></a>
+        <p class='bajs'>En del av Geosektionen vid Luleå tekniska universitet</p>
+        <a target="_blank" href='https://www.linkedin.com/company/18390407/'><i class='fa fa-linkedin'></i></a>
+        <a target="_blank" href='https://www.instagram.com/Arktis.LTU/'><i class='fa fa-instagram'></i></a>
+        <a target="_blank" href='https://www.facebook.com/arktisltu'><i class='fa fa-facebook-f'></i></a>
       </footer>
     </div>
   </div>
