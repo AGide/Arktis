@@ -132,25 +132,25 @@ ul li a:hover {
 .layer-1 {
   top: -100px;
   z-index: 5;
-  background-image: url(Images/parallax0.png);
+  background-image: url(Images/parallax_background.png);
   background-size: 2625px 779px;
 }
 .layer-2 {
   top: -50px;
   z-index: 10;
-  background-image: url(Images/parallax1.png);
+  background-image: url(Images/parallax_mountain.png);
   background-size: 2625px 779px;
 }
 .layer-3 {
   top: -10px;
   z-index: 15;
-  background-image: url(Images/parallax2.png);
+  background-image: url(Images/parallax_cloud.png);
   background-size: 2625px 779px;
 }
 .layer-4 {
   top: 65px;
   z-index: 20;
-  background-image: url(Images/parallax3.png);
+  background-image: url(Images/parallax_foreground.png);
   background-size: 2625px 779px;
 }
 
