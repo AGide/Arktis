@@ -1,13 +1,26 @@
+@font-face {
+  font-family: 'custom_normal';
+  src:
+  url('fonts/FuturaLT-Book.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'custom_heavy';
+  src:
+  url('fonts/FuturaLT-Heavy.ttf') format('truetype');
+}
+
 body {
   background-color: #14143f;
   padding: 0;
   margin: 0;
   margin-bottom: 150px;
-  font-family: "Futura LT";
+  font-family: 'custom_normal', Arial, sans-serif;
 }
-
 i {
   color: white;
+}
+strong {
+  font-family: 'custom_heavy', Arial, sans-serif;
 }
 
 /*Removes scrollbar*/
@@ -132,25 +145,25 @@ ul li a:hover {
 .layer-1 {
   top: -100px;
   z-index: 5;
-  background-image: url(Images/parallax_background.png);
+  background-image: url(images/parallax_background.png);
   background-size: 2625px 779px;
 }
 .layer-2 {
   top: -50px;
   z-index: 10;
-  background-image: url(Images/parallax_mountain.png);
+  background-image: url(images/parallax_mountain.png);
   background-size: 2625px 779px;
 }
 .layer-3 {
   top: -10px;
   z-index: 15;
-  background-image: url(Images/parallax_cloud.png);
+  background-image: url(images/parallax_cloud.png);
   background-size: 2625px 779px;
 }
 .layer-4 {
   top: 65px;
   z-index: 20;
-  background-image: url(Images/parallax_foreground.png);
+  background-image: url(images/parallax_foreground.png);
   background-size: 2625px 779px;
 }
 
@@ -228,6 +241,7 @@ div#border_content div.wrapper_content span p {
 }
 div#border_content div.wrapper_content_title {
   margin: 0;
+  font-family: 'custom_normal', Arial, sans-serif;
 }
 div#border_content div.wrapper_content_title p {
   background-color: white;
