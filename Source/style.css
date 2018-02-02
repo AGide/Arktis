@@ -8,7 +8,6 @@
   src:
   url('fonts/FuturaLT-Heavy.ttf') format('truetype');
 }
-
 body {
   background-color: #14143f;
   padding: 0;
@@ -22,7 +21,9 @@ i {
 strong {
   font-family: 'custom_heavy', Arial, sans-serif;
 }
-
+li#navigation_wrapper_name a img {
+  width:16px;
+}
 /*Removes scrollbar*/
 ::-webkit-scrollbar {
   display: none;
@@ -93,12 +94,36 @@ ul a:hover {
   text-decoration: none;
   border_content: 0;
 }
-
 ul li, ul a {
   display: inline-block;
 }
 ul li {
   float: right;
+}
+/*navigation hover animation*/
+ul li a {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  top: 0;
+  background: white;
+  height: 1px;
+  transition-property: left, right;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+ul li a:hover:before, ul li a:focus:before, ul li a:active:before {
+  left: 0;
+  right: 0;
 }
 ul li#navigation_wrapper_name {
   float: left;
@@ -106,6 +131,10 @@ ul li#navigation_wrapper_name {
 ul li#navigation_wrapper_name a {
   font-size: 18px;
   line-height: 14px;
+  padding-top: 7px;
+}
+ul li#navigation_wrapper_name a:before {
+  background:#14143f;
 }
 ul li#navigation_wrapper_name a:hover {
   color: white;
@@ -117,7 +146,12 @@ ul, ul a {
 ul li a:hover {
   background-color: #1d1e47;
 }
-
+#backbutton:hover {
+    background-color:white;
+    color: #14143f;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out;
+}
 /*Parallax*/
 .parallax-container {
   position: fixed;
@@ -166,7 +200,6 @@ ul li a:hover {
   background-image: url(images/parallax_foreground.png);
   background-size: 2625px 779px;
 }
-
 /*Innehåll*/
 #content_spons {
   padding: 20px;
@@ -198,23 +231,21 @@ ul li a:hover {
   font-size: 11px;
   text-transform: none;
 }
-
 .element_no_detail {
   text-decoration: none;
   color: white;
 }
 .element_no_detail:hover {
-  text-decoration: underline;
+  text-decoration:underline;
   color: #44433E;
 }
 p.content_spons_detail a:hover {
   color: #44433E;
-  text-decoration: none;
+  text-decoration:underline;
 }
 div.wrapper_content_gif {
   width: 100%;
 }
-
 div.wrapper_content_gif img {
   width: 100%;
   margin: 0;
@@ -251,7 +282,6 @@ div#border_content div.wrapper_content_title p {
   display: inline-block;
   text-transform: uppercase;
 }
-
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -278,7 +308,6 @@ div#border_content div.wrapper_content_title p {
 	margin-top:0;
 	color: white;
 }
-
 /*Footer*/
 footer {
   width: 100%;
@@ -294,20 +323,16 @@ footer a {
   margin: 10px;
   display: inline-block;
 }
-
 footer img {
   padding-top: 10px;
   width: 30px;
 }
-
 footer p {
   margin: 0px;
 }
-
-footer .bajs {
+footer .footer_name {
   font-size: 10px;
 }
-
 /*If screen width <880px*/
 @media only screen and (max-width: 880px) {
   ul .element_do_show {
@@ -317,7 +342,6 @@ footer .bajs {
     display: none;
   }
 }
-
 /*If screen width <880px*/
 @media only screen and (max-width: 630px) {
   ul a {
@@ -329,7 +353,6 @@ footer .bajs {
     padding-right: 5px;
   }
 }
-
 /*If screen width <560px*/
 @media only screen and (max-width: 560px) {
   ul b, ul strong, ul b *, ul strong * {
@@ -340,7 +363,6 @@ footer .bajs {
     padding-right: 3px;
   }
 }
-
  /*If screen width <540px*/
 @media only screen and (max-width: 540px) {
   body {
@@ -348,7 +370,7 @@ footer .bajs {
     margin-bottom: none;
   }
   div#border_content {
-    top: 750px;
+    top: 760px;
   }
   ul {
     position: absolute;
