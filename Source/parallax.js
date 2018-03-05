@@ -1,26 +1,3 @@
-// Loader
-window.addEventListener("load", function(){
-	var load_screen = document.getElementById("load_screen");
-	document.body.removeChild(load_screen);
-});
-
-// Autoscroll
-$(document).ready(function(){
-			$('a[href^="#"]').on('click',function (e) {
-				e.preventDefault();
-
-				var target = this.hash;
-				var $target = $(target);
-
-				$('html, body').animate({
-					'scrollTop': $target.offset().top
-				}, 1500, 'swing',function () {
-					window.location.hash = target;
-				});
-			});
-		});
-
-// Parallax
 var ParallaxManager, ParallaxPart;
 
 ParallaxPart = (function() {
@@ -31,17 +8,19 @@ ParallaxPart = (function() {
   }
 
   ParallaxPart.prototype.update = function(scrollY) {
-    if (scrollY > this.maxScroll) { return; }
+    if (scrollY > this.maxScroll) {
+      return;
+    }
     var offset = -(scrollY * this.speed);
     this.setYTransform(offset);
   };
 
   ParallaxPart.prototype.setYTransform = function(val) {
     this.el.style.webkitTransform = "translate3d(0, " + val + "px, 0)";
-    this.el.style.MozTransform    = "translate3d(0, " + val + "px, 0)";
-    this.el.style.OTransform      = "translate3d(0, " + val + "px, 0)";
-    this.el.style.transform       = "translate3d(0, " + val + "px, 0)";
-    this.el.style.msTransform     = "translateY(" + val + "px)";
+    this.el.style.MozTransform = "translate3d(0, " + val + "px, 0)";
+    this.el.style.OTransform = "translate3d(0, " + val + "px, 0)";
+    this.el.style.transform = "translate3d(0, " + val + "px, 0)";
+    this.el.style.msTransform = "translateY(" + val + "px)";
   };
 
   return ParallaxPart;
@@ -78,7 +57,9 @@ ParallaxManager = (function() {
 
   ParallaxManager.prototype.scrollHandler = function() {
     var scrollY = Math.max(window.pageYOffset, 0);
-    for (var i in this.parts) { this.parts[i].update(scrollY); }
+    for (var i in this.parts) {
+      this.parts[i].update(scrollY);
+    }
   };
 
   return ParallaxManager;

@@ -72,7 +72,7 @@ ul .element_no_show {
 }
 /*navigation behaviour*/
 ul {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 9999;
   width: 100%;
@@ -203,7 +203,7 @@ ul li a:hover {
 /*Innehåll*/
 #content_spons {
   padding: 20px;
-  padding-top: 0px;
+  padding-top: 34px;
   width: 20%;
   color: #fff;
   position: -webkit-sticky;
@@ -265,16 +265,14 @@ div#border_content div.wrapper_content {
   padding: 20px;
   margin: auto;
   margin-bottom: 20px;
-  padding-top: 0;
 }
-div#border_content div.wrapper_content span p {
+div#border_content div.wrapper_content p {
   color: white;
 }
-div#border_content div.wrapper_content_title {
+
+div#border_content h4 {
   margin: 0;
   font-family: 'custom_normal', Arial, sans-serif;
-}
-div#border_content div.wrapper_content_title p {
   background-color: white;
   padding: .5em 1.1em;
   color: #14143f;
