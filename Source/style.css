@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'custom_normal';
-  src:
-  url('fonts/FuturaLT-Book.ttf') format('truetype');
+  src: url('fonts/FuturaLT-Book.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'custom_heavy';
-  src:
-  url('fonts/FuturaLT-Heavy.ttf') format('truetype');
+  src: url('fonts/FuturaLT-Heavy.ttf') format('truetype');
 }
+
 body {
   background-color: #14143f;
   padding: 0;
@@ -15,20 +15,27 @@ body {
   margin-bottom: 150px;
   font-family: 'custom_normal', Arial, sans-serif;
 }
+
 i {
   color: white;
 }
+
 strong {
   font-family: 'custom_heavy', Arial, sans-serif;
 }
-li#navigation_wrapper_name a img {
-  width:16px;
+
+li#navigation_name a img {
+  width: 16px;
 }
+
 /*Removes scrollbar*/
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 /*Div that blocks error in parallax*/
+
 div#blocker {
   background-color: #14143f;
   width: 100%;
@@ -36,7 +43,9 @@ div#blocker {
   top: 600px;
   position: absolute;
 }
+
 /*Design of loadscreen*/
+
 #load_screen {
   background: #14143f;
   opacity: 1;
@@ -44,12 +53,13 @@ div#blocker {
   z-index: 10;
   top: 0px;
   width: 100%;
-  height:100vh;
+  height: 100vh;
   z-index: 99999;
-	display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .load_screen_loader {
   display: inline-block;
   width: 90px;
@@ -57,20 +67,27 @@ div#blocker {
   position: relative;
   animation: load_screen_loader 2s infinite ease;
 }
+
 @keyframes load_screen_loader {
   100% {
     transform: rotate(360deg);
   }
 }
+
 /*navigation*/
+
 /*Show and hide parts of text*/
+
 ul .element_do_show {
   display: none;
 }
+
 ul .element_no_show {
   display: inline;
 }
+
 /*navigation behaviour*/
+
 ul {
   position: fixed;
   top: 0;
@@ -81,6 +98,7 @@ ul {
   line-height: 0;
   padding: 0;
 }
+
 ul a {
   text-decoration: none;
   color: #F3F1E9;
@@ -89,18 +107,23 @@ ul a {
   padding: 10px;
   text-transform: uppercase;
 }
+
 ul a:hover {
   background-color: #44433E;
   text-decoration: none;
-  border_content: 0;
+  content: 0;
 }
+
 ul li, ul a {
   display: inline-block;
 }
+
 ul li {
   float: right;
 }
+
 /*navigation hover animation*/
+
 ul li a {
   display: inline-block;
   vertical-align: middle;
@@ -108,6 +131,7 @@ ul li a {
   position: relative;
   overflow: hidden;
 }
+
 ul li a:before {
   content: "";
   position: absolute;
@@ -121,44 +145,55 @@ ul li a:before {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
+
 ul li a:hover:before, ul li a:focus:before, ul li a:active:before {
   left: 0;
   right: 0;
 }
-ul li#navigation_wrapper_name {
+
+ul li#navigation_name {
   float: left;
 }
-ul li#navigation_wrapper_name a {
+
+ul li#navigation_name a {
   font-size: 18px;
   line-height: 14px;
   padding-top: 7px;
 }
-ul li#navigation_wrapper_name a:before {
-  background:#14143f;
+
+ul li#navigation_name a:before {
+  background: #14143f;
 }
-ul li#navigation_wrapper_name a:hover {
+
+ul li#navigation_name a:hover {
   color: white;
   background-color: #14143f;
 }
+
 ul, ul a {
   background-color: #14143f;
 }
+
 ul li a:hover {
   background-color: #1d1e47;
 }
+
 #backbutton:hover {
-    background-color:white;
-    color: #14143f;
-    transition-duration: 0.6s;
-    transition-timing-function: ease-out;
+  background-color: white;
+  color: #14143f;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
 }
+
 /*Parallax*/
+
 .parallax-container {
   position: fixed;
   overflow: visible;
   width: 100%;
   height: 850px;
 }
+
 .parallax-layer {
   width: 100%;
   height: 550px;
@@ -169,39 +204,47 @@ ul li a:hover {
   background-repeat: repeat-x;
   background-size: 1920px 1080px;
 }
+
 /*Parallax layers*/
+
 .layer-0 {
   top: 0;
   z-index: 5;
   background-color: white;
   background-size: 3500px 1038px;
 }
+
 .layer-1 {
   top: -100px;
   z-index: 5;
   background-image: url(images/parallax_background.png);
   background-size: 2625px 779px;
 }
+
 .layer-2 {
   top: -50px;
   z-index: 10;
   background-image: url(images/parallax_mountain.png);
   background-size: 2625px 779px;
 }
+
 .layer-3 {
   top: -10px;
   z-index: 15;
   background-image: url(images/parallax_cloud.png);
   background-size: 2625px 779px;
 }
+
 .layer-4 {
   top: 65px;
   z-index: 20;
   background-image: url(images/parallax_foreground.png);
   background-size: 2625px 779px;
 }
+
 /*Innehåll*/
-#content_spons {
+
+.sidebar_left {
   padding: 20px;
   padding-top: 34px;
   width: 20%;
@@ -213,11 +256,13 @@ ul li a:hover {
   text-transform: uppercase;
   padding-bottom: 100px;
 }
-#content_spons img {
+
+#spons img {
   width: 100%;
   float: right;
 }
-#content_spons p {
+
+#spons p {
   margin-top: 0;
   text-align: center;
   background: white;
@@ -225,54 +270,69 @@ ul li a:hover {
   font-size: 14px;
   padding: 0.5em 1.1em;
 }
-#content_spons p.content_spons_detail {
+
+#spons p.spons_detail {
   background-color: #14143f;
   color: white;
   font-size: 11px;
   text-transform: none;
 }
+
 .element_no_detail {
   text-decoration: none;
   color: white;
 }
+
 .element_no_detail:hover {
-  text-decoration:underline;
+  text-decoration: underline;
   color: #44433E;
 }
-p.content_spons_detail a:hover {
+
+p.spons_detail a:hover {
   color: #44433E;
-  text-decoration:underline;
+  text-decoration: underline;
 }
-div.wrapper_content_gif {
+
+div.content_gif {
   width: 100%;
 }
-div.wrapper_content_gif img {
+
+div.content_gif img {
   width: 100%;
   margin: 0;
 }
+
 #section1 {
   margin-top: 0;
 }
-#border_content {
+
+#content {
   background-color: #14143f;
   width: 100%;
   position: absolute;
   top: 100vh;
   text-align: justify;
 }
-div#border_content div.wrapper_content {
+
+main#content div.content {
   width: 40%;
   padding: 20px;
   margin: auto;
   margin-bottom: 20px;
 }
-div#border_content div.wrapper_content p {
+
+main#content div.content p {
   color: white;
 }
 
-div#border_content h4 {
+h1 {
   margin: 0;
   font-family: 'custom_normal', Arial, sans-serif;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
   background-color: white;
   padding: .5em 1.1em;
   color: #14143f;
@@ -280,33 +340,40 @@ div#border_content h4 {
   display: inline-block;
   text-transform: uppercase;
 }
+
 .flex-column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 .flex-row {
   display: flex;
   flex-direction: row;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
-
 }
-.flex-row div {
+
+.board_member {
   text-align: center;
   font-size: 30px;
-	padding: 5px;
+  padding: 5px;
+  margin: 0;
 }
-.flex-row div img{
-	width:150px;
-	height:220px;
+
+.board_member img {
+  width: 150px;
+  height: 220px;
 }
-.flex-row div p {
-	font-size: 14px;
-	margin-top:0;
-	color: white;
+
+.board_member figcaption {
+  font-size: 14px;
+  margin-top: 0;
+  color: white;
 }
+
 /*Footer*/
+
 footer {
   width: 100%;
   margin: auto;
@@ -317,21 +384,27 @@ footer {
   color: white;
   padding-top: 50px;
 }
+
 footer a {
   margin: 10px;
   display: inline-block;
 }
+
 footer img {
   padding-top: 10px;
   width: 30px;
 }
+
 footer p {
   margin: 0px;
 }
+
 footer .footer_name {
   font-size: 10px;
 }
+
 /*If screen width <880px*/
+
 @media only screen and (max-width: 880px) {
   ul .element_do_show {
     display: inline;
@@ -340,18 +413,22 @@ footer .footer_name {
     display: none;
   }
 }
+
 /*If screen width <880px*/
+
 @media only screen and (max-width: 630px) {
   ul a {
     padding-left: 5px;
     padding-right: 5px;
   }
-  ul.navigation_wrapperigation #navigation_wrapper_name a {
+  ul.navigationigation #navigation_name a {
     padding-left: 10px;
     padding-right: 5px;
   }
 }
+
 /*If screen width <560px*/
+
 @media only screen and (max-width: 560px) {
   ul b, ul strong, ul b *, ul strong * {
     font-weight: 700;
@@ -361,20 +438,22 @@ footer .footer_name {
     padding-right: 3px;
   }
 }
- /*If screen width <540px*/
+
+/*If screen width <540px*/
+
 @media only screen and (max-width: 540px) {
   body {
     padding-bottom: none !important;
     margin-bottom: none;
   }
-  div#border_content {
+  main#content {
     top: 760px;
   }
   ul {
     position: absolute;
     top: 560px;
   }
-  ul li, ul li#navigation_wrapper_name {
+  ul li, ul li#navigation_name {
     float: none;
     display: block;
     text-align: center;
@@ -394,7 +473,7 @@ footer .footer_name {
   .content {
     top: 250px;
   }
-  div#border_content div.wrapper_content {
+  main#content div.content {
     width: 60%;
   }
   /*Hide elements*/
@@ -404,7 +483,7 @@ footer .footer_name {
   .parallax-container script {
     display: none;
   }
-  #content_spons {
+  .sidebar_left {
     display: none;
   }
 }

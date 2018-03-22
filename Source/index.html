@@ -12,7 +12,6 @@
   <script type='text/javascript' src='jquery-3.2.1.slim.js'></script>
   <script type='text/javascript' src='autoscroll.js'></script>
   <script type='text/javascript' src='loading_screen.js'></script>
-
 </head>
 
 <body>
@@ -22,10 +21,10 @@
   </div>
 
   <!-- Navigation -->
-  <nav id='navigation_wrapper'>
+  <nav id='navigation'>
     <ul>
       <!-- Change content of <a> when needed -->
-      <li id='navigation_wrapper_name'><a href='#section0'><img src='Images/arktis_favicon.png'><strong> Arktis </strong><span class='element_no_show'>Programförening</span></a></li>
+      <li id='navigation_name'><a href='#section0'><img src='Images/arktis_favicon.png'><strong> Arktis </strong><span class='element_no_show'>Programförening</span></a></li>
       <li><a id='backbutton' href='samarbete.html'>Samarbete</a></li>
       <li><a href='#section4'><span class='element_no_show'>Styrelsen</span><span class='element_do_show'>Styret</span></a></li>
       <li><a href='#section3'>Medlemskap</a></li>
@@ -50,24 +49,40 @@
   </section>
 
   <!-- Page content -->
-  <div id='border_content'>
+  <main id='content'>
 
-    <!-- Sponsorships -->
-    <aside id='content_spons'>
-      <p><strong>I samarbete med</strong></p>
-      <!-- Samarbetspartners -->
-      <a href=''><img src='images/spons_exempel.png'></a>
-      <!-- Referencing -->
-      <p class='content_spons_detail'>Vill ditt företag synas här?<br><a class='element_no_detail' href='samarbete.html'>Gå vidare</a>.</p>
+    <!-- Left Sidebar -->
+    <aside class='sidebar_left'>
+      <!-- Sponsorships -->
+      <section id='spons'>
+        <h1>
+          <strong>I samarbete med</strong>
+        </h1>
+        <!-- Samarbetspartners -->
+        <a href=''>
+          <img src='images/spons_exempel.png' alt='Exempel på samarbetspartner'>
+        </a>
+        <!-- Referencing -->
+        <p class='spons_detail'>Vill ditt företag synas här?<br>
+          <a class='element_no_detail' href='samarbete.html'>Gå vidare</a>.
+        </p>
+      </section>
+
+      <!-- FOO BAR -->
+      <section id='BAR'>
+        <h1>
+          <strong>FOO BAR</strong>
+        </h1>
+      </section>
     </aside>
 
     <!-- Wrapper for page content -->
-    <div class='wrapper_content'>
+    <div class='content'>
       <!-- About -->
       <section id='section1'>
-        <h4 class='wrapper_content_title'>
+        <h1>
           <strong>Om oss</strong>
-        </h4>
+        </h1>
         <p>
           Arktis Programförening är en ideell studentförening under Geosektionen vid Luleå tekniska universitet som ansvarar för utbildningsbevakningen för grundprogrammen Samhällsbyggnad och Civilingenjör arkitektur. Föreningen arbetar ständigt för att öka gemenskapen
           mellan utbildningarna, detta görs genom aktiviteter såsom sittningar, fester, resor och föreläsningar för våra.
@@ -78,12 +93,12 @@
 
       <!-- Join -->
       <section id='section2'>
-        <h4 class='wrapper_content_title'>
-        <strong>Engagera dig</strong>
-      </h4>
-        <div class='wrapper_content_gif'><img src='images/example_work.gif'></div>
+        <h1>
+          <strong>Engagera dig</strong>
+        </h1>
+        <div class='content_gif'><img src='images/example_work.gif'></div>
         <p>
-          Är du intresserad av att engagera dig i föreningen men vet inte hur du ska gå till väga? Kontakta oss på sociala medier eller via <a href="mailto:arktis@geosektionen.se">arktis@geosektionen.se</a>.
+          Är du intresserad av att engagera dig i föreningen men vet inte hur du ska gå till väga? Kontakta oss på sociala medier eller via <a href="mailto:arktis@geosektionen.se" style="color:white">arktis@geosektionen.se</a>.
           <br /><br /> Föreningen jobbar inom många områden och det är därför bra om du har ett hum om vad du är intresserad av. För att presentera det kort så består arktis främst av en styrelse där alla ledamot, bortsett från ordförande och viceordförande,
           även ansvara över ett utskott.
           <br><br> Om du inte vill engagera dig i styrelsen kan du alltid engagera dig i ett utskott, styrelsen har valt att kalla detta för “engagemang utan ansvar” då du som utskottsmedlem inte har några direkta ansvar istället väljer du var, när och
@@ -95,9 +110,9 @@
 
       <!-- Membership -->
       <section id="section3">
-        <h4 class='wrapper_content_title'>
+        <h1>
           <strong>Medlemskap</strong>
-        </h4>
+        </h1>
         <span><p>
         Vet du vad det innebär att vara medlem i Arktis programförening? Om du vill läsa en längre text som även förklarar mer om vad föreningen gör kan du <a href='https://drive.google.com/file/d/1nzEJ1YEGfK8xHpNQyHzcDQ8ePNlK0G4z/view' class='element_no_detail'>trycka här</a>.
         <br><br>
@@ -107,63 +122,63 @@
 
       <!-- STYRELSEN -->
       <section id="section4">
-        <h4 class='wrapper_content_title'>
-        <strong>Styrelsen</strong>
-      </h4>
+        <h1>
+          <strong>Styrelsen</strong>
+        </h1>
         <div class='flex-column'>
           <div class='flex-row'>
-            <div>
+            <figure class='board_member'>
               <img src='images/member_male1.png' />
-              <p>
+              <figcaption>
                 Andreas Brandow <br /> Ordförande
-              </p>
-            </div>
-            <div>
+              </figcaption>
+            </figure>
+            <figure class='board_member'>
               <img src='images/member_male2.png' />
-              <p>
+              <figcaption>
                 Albin Gideonsson <br /> Vice ordförande
-              </p>
-            </div>
+              </figcaption>
+            </figure>
           </div>
           <div class='flex-row'>
-            <div>
+            <figure class='board_member'>
               <img src='images/member_woman1.png' />
-              <p>
+              <figcaption>
                 Johanna Wärvik <br /> Utbildning
-              </p>
-            </div>
-            <div>
+              </figcaption>
+            </figure>
+            <figure class='board_member'>
               <img src='images/member_woman2.png' />
-              <p>
+              <figcaption>
                 Sandra Zetterqvist <br /> Arbetsmarknad
-              </p>
-            </div>
-            <div>
+              </figcaption>
+            </figure>
+            <figure class='board_member'>
               <img src='images/member_male2.png' />
-              <p>
+              <figcaption>
                 Vakant <br /> Kassör
-              </p>
-            </div>
+              </figcaption>
+            </figure>
           </div>
           <div class='flex-row'>
-            <div>
+            <figure class='board_member'>
               <img src='images/member_male2.png' />
-              <p>
+              <figcaption>
                 Jaber Mikari <br /> Event
-              </p>
-            </div>
-            <div>
+              </figcaption>
+            </figure>
+            <figure class='board_member'>
               <img src='images/member_male1.png' />
-              <p>
+              <figcaption>
                 Victor Vennerström <br /> PR/Info
-              </p>
-            </div>
-            <div>
+              </figcaption>
+            </figure>
+            <figure class='board_member'>
               <img src='images/member_male1.png' />
-              <p>
+              <figcaption>
                 Christian Sjödin <br /> Sektreterare
-              </p>
-            </div>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -176,7 +191,8 @@
         <a target="_blank" href='https://www.instagram.com/Arktis.LTU/'><i class='fa fa-instagram'></i></a>
         <a target="_blank" href='https://www.facebook.com/arktisltu'><i class='fa fa-facebook-f'></i></a>
       </footer>
-    </div>
+  </main>
+
   </div>
 </body>
 
